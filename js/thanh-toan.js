@@ -1,3 +1,13 @@
+function checkLogin(callback) {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    if (!isLoggedIn) {
+        alert("Bạn cần đăng nhập để tiếp tục.");
+        window.location.href = "dang-nhap.html"; // hoặc login.html nếu bạn đặt tên vậy
+        return;
+    }
+    callback();
+}
+
 function getQueryParams() {
     const params = new URLSearchParams(window.location.search);
     return {
