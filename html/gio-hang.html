@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/gio-hang.css">
+    <title>Giỏ Hàng</title>
+  </head>
+  <body>
+    <!-- infor -->
+    <div class="infor">
+      <div class="inner-wrap p-1">
+        <div class="container">
+          <div class="d-flex gap-5 justify-content-between">
+            <div class="tel">
+              <i class="fa-solid fa-phone-volume p-2"></i>
+              <label for="" class="fw-bold">Hotline:</label>
+              <a href="tel:1800 1234" class="tel text-light">1800 1234</a>
+            </div>
+            <div class="address d-flex">
+              <div>
+                <i class="fa-solid fa-location-dot me-1"></i
+                ><b> Địa chỉ:</b> 302/4 Nguyễn Văn Nghi, P7, Gò Vấp, TP.HCM
+              </div>
+            </div>
+            <div class="title">
+              <i class="fa-solid fa-truck"></i> Mua ngay để nhận ưu đãi và miễn
+              phí vận chuyển
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End infor -->
+
+    <!-- header -->
+    <header class="header pt-1 pb-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+          <img src="../img/logo.png" alt="" class="img" width="250px" />
+        </a>
+        <nav class="navbar">
+          <ul
+            class="header-menu d-flex gap-4 fs-5 pt-2 ms-3 me-5"
+            style="z-index: 99"
+          >
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="san-pham.html">Sản phẩm</a>
+              <ul>
+                <li>
+                  <a href="san-pham.html"> Rau ăn lá </a>
+                  <ul>
+                    <li>
+                      <a href="#!">Rau muống</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải ngọt</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải xanh</a>
+                    </li>
+                    <li>
+                      <a href="#!">Xà lách</a>
+                    </li>
+                    <li>
+                      <a href="#!">Rau dền</a>
+                    </li>
+                    <li>
+                      <a href="#!">Mồng tơi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn hoa </a>
+                  <ul>
+                    <li><a href="#!">Bông cải xanh</a></li>
+                    <li><a href="#!">Bông cải trắng</a></li>
+                    <li><a href="#!">Hoa thiên lý</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn quả </a>
+                  <ul>
+                    <li><a href="#!">Cà chua</a></li>
+                    <li><a href="#!">Dưa leo</a></li>
+                    <li><a href="#!">Khổ qua</a></li>
+                    <li><a href="#!">Cà tím</a></li>
+                    <li><a href="#!">Ớt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn củ </a>
+                  <ul>
+                    <li><a href="#!">Củ cải trắng</a></li>
+                    <li><a href="#!">Củ cải đỏ</a></li>
+                    <li><a href="#!">Củ dền</a></li>
+                    <li><a href="#!">Cà rốt</a></li>
+                    <li><a href="#!">Khoai tây</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau thơm / Gia vị </a>
+                  <ul>
+                    <li><a href="#!">Hành lá</a></li>
+                    <li><a href="#!">Ngò rí </a></li>
+                    <li><a href="#!">Tía tô</a></li>
+                    <li><a href="#!">Húng lủi</a></li>
+                    <li><a href="#!">Húng quế</a></li>
+                    <li><a href="#!">Lá lốt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau đặc sản </a>
+                  <ul>
+                    <li><a href="#!">Rau hữu cơ theo mùa</a></li>
+                    <li><a href="#!">Rau rừng</a></li>
+                    <li><a href="#!">Rau dại ăn được</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Bài viết</a>
+              <ul>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="gioi-thieu.html">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#!" class="d-flex align-items-center search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            name="keyword"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+        </form>
+        <a href="login-register.html">
+          <button
+            class="button btn-outline-success rounded-pill px-3 py-1"
+            data-bs-
+          >
+            <i class="fa-solid fa-user me-2"></i>Login / Sign Up
+          </button>
+        </a>
+        <a href="gio-hang.html">
+          <i class="fa-solid fa-cart-plus fs-2" style="color: #006400"></i>
+        </a>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Breadcrumb -->
+    <div class="title">
+      <div class="container fs-4 fw-bold pt-3">
+        Trang chủ > <a href="gio-hang.html" style="color: #006400">Giỏ Hàng</a>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+      <h2>Giỏ Hàng</h2>
+      <div class="cart-header">
+        <input type="checkbox" id="select-all" checked />
+        <label for="select-all">Chọn tất cả</label>
+      </div>
+      <div id="cart-list"></div>
+      <div class="total">
+        Tổng cộng (đã chọn): <span id="total-price">0 VNĐ</span>
+      </div>
+      <a href="#" class="checkout-button" id="checkout-button">Thanh Toán</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-top">
+            <div class="inner-content">
+              Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+            </div>
+            <form
+              class="inner-form"
+              action="#!"
+              method="post"
+              autocomplete="on"
+              target="_blank"
+            >
+              <label for="Email"></label>
+              <input
+                type="email"
+                id="Email"
+                placeholder="Nhập email của bạn..."
+              />
+              <button>Đăng ký ngay</button>
+            </form>
+          </div>
+          <div class="inner-middle">
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >Trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gioi-thieu.html"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >Danh mục</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:03458458800"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >Liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <nav class="inner-socials">
+              <ul>
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-facebook fs-2 text-primary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-twitter fs-2 text-primary"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-instagram fs-2 text-warning"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-youtube fs-2 text-danger"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="inner-bottom">
+            <a
+              href="/cdn-cgi/l/email-protection#caa2bfb3a4a2beaba4baa2a5a4adf8fafaffa8be8aada7aba3a6e4a9a5a7"
+              class="inner-copyright"
+            >
+              @2025 HuynhTanPhong. PetForBest
+            </a>
+            <div class="inner-logo">
+              <a href="index.html">
+                <img src="../images/Logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a href="#!" style="color: white">Điều khoản dịch vụ</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: white">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+    </script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/gio-hang.js"></script>
+   
+</body>
+</html>

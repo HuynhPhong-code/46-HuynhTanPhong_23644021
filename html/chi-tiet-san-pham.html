@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/chi-tiet-san-pham.css">
+    <title>Trang chi tiết sản phẩm</title>
+  </head>
+  <body>
+    <!-- infor -->
+    <div class="infor">
+      <div class="inner-wrap p-1">
+        <div class="container">
+          <div class="d-flex gap-5 justify-content-between">
+            <div class="tel">
+              <i class="fa-solid fa-phone-volume p-2"></i>
+              <label for="" class="fw-bold">Hotline:</label>
+              <a href="tel:1800 1234" class="tel text-light">1800 1234</a>
+            </div>
+            <div class="address d-flex">
+              <div>
+                <i class="fa-solid fa-location-dot me-1"></i
+                ><b> Địa chỉ:</b> 302/4 Nguyễn Văn Nghi, P7, Gò Vấp, TP.HCM
+              </div>
+            </div>
+            <div class="title">
+              <i class="fa-solid fa-truck"></i> Mua ngay để nhận ưu đãi và miễn
+              phí vận chuyển
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End infor -->
+
+    <!-- header -->
+    <header class="header pt-1 pb-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+          <img src="../img/logo.png" alt="" class="img" width="250px" />
+        </a>
+        <nav class="navbar">
+          <ul
+            class="header-menu d-flex gap-4 fs-5 pt-2 ms-3 me-5"
+            style="z-index: 99"
+          >
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="san-pham.html">Sản phẩm</a>
+              <ul>
+                <li>
+                  <a href="san-pham.html"> Rau ăn lá </a>
+                  <ul>
+                    <li>
+                      <a href="#!">Rau muống</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải ngọt</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải xanh</a>
+                    </li>
+                    <li>
+                      <a href="#!">Xà lách</a>
+                    </li>
+                    <li>
+                      <a href="#!">Rau dền</a>
+                    </li>
+                    <li>
+                      <a href="#!">Mồng tơi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn hoa </a>
+                  <ul>
+                    <li><a href="#!">Bông cải xanh</a></li>
+                    <li><a href="#!">Bông cải trắng</a></li>
+                    <li><a href="#!">Hoa thiên lý</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn quả </a>
+                  <ul>
+                    <li><a href="#!">Cà chua</a></li>
+                    <li><a href="#!">Dưa leo</a></li>
+                    <li><a href="#!">Khổ qua</a></li>
+                    <li><a href="#!">Cà tím</a></li>
+                    <li><a href="#!">Ớt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn củ </a>
+                  <ul>
+                    <li><a href="#!">Củ cải trắng</a></li>
+                    <li><a href="#!">Củ cải đỏ</a></li>
+                    <li><a href="#!">Củ dền</a></li>
+                    <li><a href="#!">Cà rốt</a></li>
+                    <li><a href="#!">Khoai tây</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau thơm / Gia vị </a>
+                  <ul>
+                    <li><a href="#!">Hành lá</a></li>
+                    <li><a href="#!">Ngò rí </a></li>
+                    <li><a href="#!">Tía tô</a></li>
+                    <li><a href="#!">Húng lủi</a></li>
+                    <li><a href="#!">Húng quế</a></li>
+                    <li><a href="#!">Lá lốt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau đặc sản </a>
+                  <ul>
+                    <li><a href="#!">Rau hữu cơ theo mùa</a></li>
+                    <li><a href="#!">Rau rừng</a></li>
+                    <li><a href="#!">Rau dại ăn được</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Bài viết</a>
+              <ul>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="gioi-thieu.html">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#!" class="d-flex align-items-center search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            name="keyword"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+        </form>
+        <a href="login-register.html">
+          <button
+            class="button btn-outline-success rounded-pill px-3 py-1"
+            data-bs-
+          >
+            <i class="fa-solid fa-user me-2"></i>Login / Sign Up
+          </button>
+        </a>
+        <a href="gio-hang.html">
+          <i class="fa-solid fa-cart-plus fs-2" style="color: #006400"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- product detail -->
+    <section class="product-detail my-5">
+      <div class="container">
+        <div class="row">
+          <!-- Hình ảnh sản phẩm -->
+          <div class="col-md-6">
+            <img
+              src=""
+              alt="Tên sản phẩm"
+              class="img-fluid rounded"
+              id="main-image"
+            />
+            <div class="mt-3 d-flex gap-2">
+              <img
+                src=""
+                alt=""
+                class="img-thumbnail"
+                style="width: 80px; height: 80px"
+              />
+              <img
+                src=""
+                alt=""
+                class="img-thumbnail"
+                style="width: 80px; height: 80px"
+              />
+              <img
+                src=""
+                alt=""
+                class="img-thumbnail"
+                style="width: 80px; height: 80px"
+              />
+            </div>
+          </div>
+
+          <!-- Thông tin sản phẩm -->
+          <div class="col-md-6">
+            <h2 class="fw-bold" id="product-title">Tên sản phẩm</h2>
+            <p class="text-success fs-4 fw-bold" id="product-price">
+              Giá: 45.000đ
+            </p>
+            <p>Trạng thái: <span class="text-success">Còn hàng</span></p>
+            <!-- <p>Danh mục: <a href="san-pham-an-la.html" class="text-decoration-none">Rau ăn lá</a></p> -->
+
+            <div class="my-3">
+              <label for="quantity" class="form-label fw-bold">Số lượng:</label>
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                class="form-control w-25"
+              />
+            </div>
+
+            <div class="d-flex gap-3 mt-4">
+              <button class="btn btn-success px-4 py-2" id="add-to-cart">
+                <i class="fa-solid fa-cart-plus me-2"></i> Thêm vào giỏ
+              </button>
+              <button class="btn btn-outline-danger px-4 py-2">
+                <i class="fa-solid fa-heart me-2"></i> Yêu thích
+              </button>
+            </div>
+
+            <div class="mt-4">
+              <h5 class="fw-bold">Mô tả sản phẩm</h5>
+              <p id="product-description">
+                Rau sạch, tươi mới, được trồng theo quy trình hữu cơ, đảm bảo an
+                toàn vệ sinh thực phẩm. Hương vị thơm ngon, giàu dinh dưỡng, phù
+                hợp cho mọi gia đình.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chi tiết mô tả thêm -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="fw-bold">Chi tiết sản phẩm</h4>
+            <p>- Xuất xứ: Việt Nam</p>
+            <p>- Quy cách đóng gói: 500g/gói</p>
+            <p>- Bảo quản: Ở nhiệt độ từ 0-5°C</p>
+            <p>- Thời gian sử dụng: 5 ngày kể từ ngày sản xuất</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end product detail -->
+
+    <div class="contact-buttons">
+      <a href="tel:+123456789" class="call-button"><i>📞</i> Gọi ngay</a>
+      <a href="#" class="chat-button"><i>💬</i> Chat với chúng tôi</a>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-top">
+            <div class="inner-content">
+              đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+            </div>
+
+            <form
+              class="inner-form"
+              action="#!"
+              method="post"
+              autocomplete="on"
+              target="_blank"
+            >
+              <label for="Email"></label>
+              <input
+                type="email"
+                id="Email"
+                placeholder="Nhập email của bạn..."
+              />
+              <button>Đăng ký ngay</button>
+            </form>
+          </div>
+
+          <div class="inner-middle">
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gioi-thieu.html"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >danh mục</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:03458458800"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <nav class="inner-socials">
+              <ul>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-facebook fs-2 text-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-twitter fs-2 text-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-instagram fs-2 text-warning"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-youtube fs-2 text-danger"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="inner-bottom">
+            <a
+              href="email:huynhtanphong2005bt@gmail.com"
+              class="inner-copyright"
+            >
+              @2025HuynhTanPhong.PetForBest
+            </a>
+            <div class="inner-logo">
+              <a href="index.html">
+                <img src="../images/Logo.svg" alt="" />
+              </a>
+            </div>
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a href="#!" style="color: white">Điều khoảng dịch vụ</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: white">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/chi-tiet-sam-pham.js"></script>
+    <!-- <script>
+      // Lấy thông tin sản phẩm từ URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const title = urlParams.get("title");
+      const price = urlParams.get("price");
+      const image = urlParams.get("image");
+      const description = urlParams.get("description");
+
+      // Cập nhật thông tin sản phẩm trên trang
+      document.querySelector(".product-detail .col-md-6 h2").textContent =
+        title || "Tên sản phẩm";
+      document.querySelector(
+        ".product-detail .text-success.fs-4"
+      ).textContent = `Giá: ${price || "Chưa có giá"}`;
+      document.querySelector(".product-detail .col-md-6 .img-fluid").src =
+        image || "../img/default-product.jpg";
+      document.querySelector(".product-detail .col-md-6 .mt-4 p").textContent =
+        description || "Chưa có mô tả";
+
+      // Cập nhật các hình ảnh phụ (thumbnail) với đường dẫn động
+      const thumbnails = document.querySelectorAll(".product-detail .mt-3 img");
+      thumbnails.forEach((thumbnail) => {
+        thumbnail.src = image || "../img/default-product.jpg";
+      });
+
+      // Xử lý nhấp vào thumbnail
+      const mainImage = document.getElementById("main-image");
+      document
+        .querySelectorAll(".product-detail .mt-3 img")
+        .forEach((thumbnail) => {
+          thumbnail.addEventListener("click", () => {
+            mainImage.src = thumbnail.src;
+          });
+        });
+
+      // Xử lý thêm vào giỏ hàng
+      document.getElementById("add-to-cart").addEventListener("click", () => {
+        const quantity =
+          parseInt(document.getElementById("quantity").value) || 1;
+        const cartItem = {
+          title: title || "Tên sản phẩm",
+          price: price || "Chưa có giá",
+          image: image || "../img/default-product.jpg",
+          description: description || "Chưa có mô tả",
+          quantity: quantity,
+        };
+
+        // Lấy giỏ hàng từ localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Kiểm tra sản phẩm đã có trong giỏ chưa
+        const existingItem = cart.find((item) => item.title === cartItem.title);
+        if (existingItem) {
+          existingItem.quantity += quantity;
+        } else {
+          cart.push(cartItem);
+        }
+
+        // Lưu giỏ hàng vào localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Sản phẩm đã được thêm vào giỏ hàng!");
+      });
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'93a58961487d53f6',t:'MTc0NjMzNTg5Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'93a64c535dbd53b2',t:'MTc0NjM0Mzg4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script> -->
+  </body>
+</html>

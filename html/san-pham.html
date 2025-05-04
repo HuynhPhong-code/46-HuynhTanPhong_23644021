@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/san-pham.css">
+    <title>Trang Sản Phẩm</title>
+  </head>
+  <body>
+    <!-- infor -->
+    <div class="infor">
+      <div class="inner-wrap p-1">
+        <div class="container">
+          <div class="d-flex gap-5 justify-content-between">
+            <div class="tel">
+              <i class="fa-solid fa-phone-volume p-2"></i>
+              <label for="" class="fw-bold">Hotline:</label>
+              <a href="tel:1800 1234" class="tel text-light">1800 1234</a>
+            </div>
+            <div class="address d-flex">
+              <div>
+                <i class="fa-solid fa-location-dot me-1"></i
+                ><b> Địa chỉ:</b> 302/4 Nguyễn Văn Nghi, P7, Gò Vấp, TP.HCM
+              </div>
+            </div>
+            <div class="title">
+              <i class="fa-solid fa-truck"></i> Mua ngay để nhận ưu đãi và miễn
+              phí vận chuyển
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End infor -->
+
+    <!-- header -->
+    <header class="header pt-1 pb-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html">
+          <img src="../img/logo.png" alt="" class="img" width="250px" />
+        </a>
+        <nav class="navbar">
+          <ul
+            class="header-menu d-flex gap-4 fs-5 pt-2 ms-3 me-5"
+            style="z-index: 99"
+          >
+            <li>
+              <a href="index.html">Trang chủ</a>
+            </li>
+            <li>
+              <a href="san-pham.html">Sản phẩm</a>
+              <ul>
+                <li>
+                  <a href="san-pham.html"> Rau ăn lá </a>
+                  <ul>
+                    <li>
+                      <a href="#!">Rau muống</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải ngọt</a>
+                    </li>
+                    <li>
+                      <a href="#!">Cải xanh</a>
+                    </li>
+                    <li>
+                      <a href="#!">Xà lách</a>
+                    </li>
+                    <li>
+                      <a href="#!">Rau dền</a>
+                    </li>
+                    <li>
+                      <a href="#!">Mồng tơi</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn hoa </a>
+                  <ul>
+                    <li><a href="#!">Bông cải xanh</a></li>
+                    <li><a href="#!">Bông cải trắng</a></li>
+                    <li><a href="#!">Hoa thiên lý</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn quả </a>
+                  <ul>
+                    <li><a href="#!">Cà chua</a></li>
+                    <li><a href="#!">Dưa leo</a></li>
+                    <li><a href="#!">Khổ qua</a></li>
+                    <li><a href="#!">Cà tím</a></li>
+                    <li><a href="#!">Ớt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau ăn củ </a>
+                  <ul>
+                    <li><a href="#!">Củ cải trắng</a></li>
+                    <li><a href="#!">Củ cải đỏ</a></li>
+                    <li><a href="#!">Củ dền</a></li>
+                    <li><a href="#!">Cà rốt</a></li>
+                    <li><a href="#!">Khoai tây</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau thơm / Gia vị </a>
+                  <ul>
+                    <li><a href="#!">Hành lá</a></li>
+                    <li><a href="#!">Ngò rí </a></li>
+                    <li><a href="#!">Tía tô</a></li>
+                    <li><a href="#!">Húng lủi</a></li>
+                    <li><a href="#!">Húng quế</a></li>
+                    <li><a href="#!">Lá lốt</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="san-pham.html"> Rau đặc sản </a>
+                  <ul>
+                    <li><a href="#!">Rau hữu cơ theo mùa</a></li>
+                    <li><a href="#!">Rau rừng</a></li>
+                    <li><a href="#!">Rau dại ăn được</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Bài viết</a>
+              <ul>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="gioi-thieu.html">Blog</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!">Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="#!" class="d-flex align-items-center search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            name="keyword"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+        </form>
+        <a href="login-register.html">
+          <button
+            class="button btn-outline-success rounded-pill px-3 py-1"
+            data-bs-
+          >
+            <i class="fa-solid fa-user me-2"></i>Login / Sign Up
+          </button>
+        </a>
+        <a href="gio-hang.html">
+          <i class="fa-solid fa-cart-plus fs-2" style="color: #006400"></i>
+        </a>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Breadcrumb -->
+    <div class="title">
+      <div class="container fs-4 fw-bold pt-3">
+        Trang chủ >
+        <a href="san-pham.html" style="color: #006400">Trang Sản Phẩm</a>
+      </div>
+    </div>
+
+    <!-- Product Section - 1 -->
+    <section class="section-1 mb-5">
+      <div class="container">
+        <div class="button-container pt-2 pb-1">
+          <button class="custom-button mt-2">
+            Rau Ăn Lá - Sản Phẩm Bán Chạy
+          </button>
+        </div>
+        <div class="title fs-2">
+          Rau ăn lá & 1 số sản phẩm hữu cơ - thủy canh
+        </div>
+        <div class="list-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cải ngọt 300gr"
+                data-price="24.000 VNĐ"
+                data-image="../img/sp-rau-an-la/cai-ngot.webp"
+                data-description="Cải ngọt tươi, hữu cơ, 300gr"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cải ngọt 300gr&price=24.000 VNĐ&image=../img/sp-rau-an-la/cai-ngot.webp&description=Cải ngọt tươi, hữu cơ, 300gr"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/cai-ngot.webp"
+                      class="card-img-top"
+                      alt="Cải ngọt 300gr"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cải ngọt 300gr</h5>
+                  <p class="hl fw-bold">24.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau mồng tơi Organic 300gr"
+                data-price="24.000 VNĐ"
+                data-image="../img/sp-rau-an-la/mong-toi.webp"
+                data-description="Rau mồng tơi tươi, hữu cơ, 300gr"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau mồng tơi Organic 300gr&price=24.000 VNĐ&image=../img/sp-rau-an-la/mong-toi.webp&description=Rau mồng tơi tươi, hữu cơ, 300gr"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/mong-toi.webp"
+                      class="card-img-top"
+                      alt="Rau mồng tơi Organic 300gr"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau mồng tơi Organic 300gr</h5>
+                  <p class="hl fw-bold">24.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau cải xanh"
+                data-price="20.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-la/cai-xanh.webp"
+                data-description="Rau cải xanh tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau cải xanh&price=20.000 VNĐ/kg&image=../img/sp-rau-an-la/cai-xanh.webp&description=Rau cải xanh tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/cai-xanh.webp"
+                      class="card-img-top"
+                      alt="Rau cải xanh"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau cải xanh</h5>
+                  <p class="hl fw-bold">20.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau dền"
+                data-price="22.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-la/rau-den.webp"
+                data-description="Rau dền tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau dền&price=22.000 VNĐ/kg&image=../img/sp-rau-an-la/rau-den.webp&description=Rau dền tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/rau-den.webp"
+                      class="card-img-top"
+                      alt="Rau dền"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau dền</h5>
+                  <p class="hl fw-bold">22.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau muống"
+                data-price="24.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-la/rau-muong.webp"
+                data-description="Rau muống tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau muống&price=24.000 VNĐ/kg&image=../img/sp-rau-an-la/rau-muong.webp&description=Rau muống tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/rau-muong.webp"
+                      class="card-img-top"
+                      alt="Rau muống"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau muống</h5>
+                  <p class="hl fw-bold">24.000 VNĐ/KG</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau muống bào 250gr"
+                data-price="33.000 VNĐ"
+                data-image="../img/sp-rau-an-la/rau-muon-bao.webp"
+                data-description="Rau muống bào tươi, 250gr"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau muống bào 250gr&price=33.000 VNĐ&image=../img/sp-rau-an-la/rau-muon-bao.webp&description=Rau muống bào tươi, 250gr"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/rau-muon-bao.webp"
+                      class="card-img-top"
+                      alt="Rau muống bào 250gr"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau muống bào 250gr</h5>
+                  <p class="hl fw-bold">33.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Rau xà lách 300gr"
+                data-price="27.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-la/xa-lach.webp"
+                data-description="Rau xà lách tươi, 300gr"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Rau xà lách 300gr&price=27.000 VNĐ/kg&image=../img/sp-rau-an-la/xa-lach.webp&description=Rau xà lách tươi, 300gr"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/xa-lach.webp"
+                      class="card-img-top"
+                      alt="Rau xà lách 300gr"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Rau xà lách 300gr</h5>
+                  <p class="hl fw-bold">27.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Xà lách Mỹ Iceberg"
+                data-price="29.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-la/xa-lach-my.webp"
+                data-description="Xà lách Mỹ Iceberg tươi, 250-400gr"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Xà lách Mỹ Iceberg&price=29.000 VNĐ/kg&image=../img/sp-rau-an-la/xa-lach-my.webp&description=Xà lách Mỹ Iceberg tươi, 250-400gr"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-la/xa-lach-my.webp"
+                      class="card-img-top"
+                      alt="Xà lách Mỹ Iceberg"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">
+                    Xà lách Mỹ Iceberg 1 cây khoảng 250 - 400g
+                  </h5>
+                  <p class="hl fw-bold">29.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cà chua BEEF"
+                data-price="44.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/ca-chua-44.webp"
+                data-description="Cà chua BEEF tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cà chua BEEF&price=44.000 VNĐ/kg&image=../img/sp-rau-an-qua/ca-chua-44.webp&description=Cà chua BEEF tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/ca-chua-44.webp"
+                      class="card-img-top"
+                      alt="Cà chua BEEF"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cà chua BEEF</h5>
+                  <p class="hl fw-bold">44.000 VNĐ/KG</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cà tím"
+                data-price="42.000 VNĐ"
+                data-image="../img/sp-rau-an-qua/ca-tim-42.webp"
+                data-description="Cà tím tươi, hữu cơ"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cà tím&price=42.000 VNĐ&image=../img/sp-rau-an-qua/ca-tim-42.webp&description=Cà tím tươi, hữu cơ"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/ca-tim-42.webp"
+                      class="card-img-top"
+                      alt="Cà tím"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cà tím</h5>
+                  <p class="hl fw-bold">42.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cà chua bi socola"
+                data-price="45.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/ca-chua-bi-socola-45.webp"
+                data-description="Cà chua bi socola tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cà chua bi socola&price=45.000 VNĐ/kg&image=../img/sp-rau-an-qua/ca-chua-bi-socola-45.webp&description=Cà chua bi socola tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/ca-chua-bi-socola-45.webp"
+                      class="card-img-top"
+                      alt="Cà chua bi socola"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cà chua bi socola</h5>
+                  <p class="hl fw-bold">45.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Dưa leo hữu cơ Organic"
+                data-price="75.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/dua-leo-huu-co-125.webp"
+                data-description="Dưa leo hữu cơ tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Dưa leo hữu cơ Organic&price=75.000 VNĐ/kg&image=../img/sp-rau-an-qua/dua-leo-huu-co-125.webp&description=Dưa leo hữu cơ tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/dua-leo-huu-co-125.webp"
+                      class="card-img-top"
+                      alt="Dưa leo hữu cơ Organic"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Dưa leo hữu cơ Organic</h5>
+                  <p class="hl fw-bold">75.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Khổ qua hữu cơ"
+                data-price="57.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/kho-qua-huu-co-90.webp"
+                data-description="Khổ qua hữu cơ tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Khổ qua hữu cơ&price=57.000 VNĐ/kg&image=../img/sp-rau-an-qua/kho-qua-huu-co-90.webp&description=Khổ qua hữu cơ tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/kho-qua-huu-co-90.webp"
+                      class="card-img-top"
+                      alt="Khổ qua hữu cơ"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Khổ qua hữu cơ</h5>
+                  <p class="hl fw-bold">57.000 VNĐ/KG</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Ớt chuông"
+                data-price="54.000 VNĐ"
+                data-image="../img/sp-rau-an-qua/ot-chuong-54.webp"
+                data-description="Ớt chuông tươi, hữu cơ"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Ớt chuông&price=54.000 VNĐ&image=../img/sp-rau-an-qua/ot-chuong-54.webp&description=Ớt chuông tươi, hữu cơ"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/ot-chuong-54.webp"
+                      class="card-img-top"
+                      alt="Ớt chuông"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Ớt chuông</h5>
+                  <p class="hl fw-bold">54.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Ớt sừng đỏ"
+                data-price="42.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/ot-sung-do-52.jpg"
+                data-description="Ớt sừng đỏ tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Ớt sừng đỏ&price=42.000 VNĐ/kg&image=../img/sp-rau-an-qua/ot-sung-do-52.jpg&description=Ớt sừng đỏ tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/ot-sung-do-52.jpg"
+                      class="card-img-top"
+                      alt="Ớt sừng đỏ"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Ớt sừng đỏ</h5>
+                  <p class="hl fw-bold">42.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Đậu bắp"
+                data-price="25.500 VNĐ/kg"
+                data-image="../img/sp-rau-an-qua/dau-bap-loai-25.5.jpg"
+                data-description="Đậu bắp tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Đậu bắp&price=25.500 VNĐ/kg&image=../img/sp-rau-an-qua/dau-bap-loai-25.5.jpg&description=Đậu bắp tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-qua/dau-bap-loai-25.5.jpg"
+                      class="card-img-top"
+                      alt="Đậu bắp"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Đậu bắp</h5>
+                  <p class="hl fw-bold">25.500 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center d-flex justify-content-center">
+            <div class="pagination">
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <span class="dots">...</span>
+              <a href="#">8</a>
+              <a href="#" class="arrow">&gt;</a>
+              <a href="#" class="arrow">&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Section - 2 -->
+    <section class="section-1 mb-5">
+      <div class="container">
+        <div class="button-container pt-2 pb-1">
+          <button class="custom-button mt-2">
+            Rau Ăn Củ - SP Đang Sale Trong Ngày
+          </button>
+        </div>
+        <div class="title fs-2">
+          Rau ăn củ & 1 số sản phẩm đang được giảm giá trong ngày
+        </div>
+        <div class="list-item">
+          <div class="row">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cà rốt"
+                data-price="18.000 VNĐ"
+                data-image="../img/sp-rau-an-cu/ca-rot-18.jpg"
+                data-description="Cà rốt tươi, hữu cơ, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cà rốt&price=18.000 VNĐ&image=../img/sp-rau-an-cu/ca-rot-18.jpg&description=Cà rốt tươi, hữu cơ, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/ca-rot-18.jpg"
+                      class="card-img-top"
+                      alt="Cà rốt"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cà rốt</h5>
+                  <p class="hl fw-bold">18.000 VNĐ (-13%)</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Cà rốt bào sợi"
+                data-price="33.000 VNĐ"
+                data-image="../img/sp-rau-an-cu/ca-rot-bao-loai-33.jpg"
+                data-description="Cà rốt bào sợi tươi, hữu cơ"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Cà rốt bào sợi&price=33.000 VNĐ&image=../img/sp-rau-an-cu/ca-rot-bao-loai-33.jpg&description=Cà rốt bào sợi tươi, hữu cơ"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/ca-rot-bao-loai-33.jpg"
+                      class="card-img-top"
+                      alt="Cà rốt bào sợi"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Cà rốt bào sợi</h5>
+                  <p class="hl fw-bold">33.000 VNĐ (-30%)</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Củ cải trắng"
+                data-price="14.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-cu/cu-cai-trang-14.jpg"
+                data-description="Củ cải trắng tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Củ cải trắng&price=14.000 VNĐ/kg&image=../img/sp-rau-an-cu/cu-cai-trang-14.jpg&description=Củ cải trắng tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/cu-cai-trang-14.jpg"
+                      class="card-img-top"
+                      alt="Củ cải trắng"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Củ cải trắng</h5>
+                  <p class="hl fw-bold">14.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Củ dền đỏ"
+                data-price="28.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-cu/cu-den-do-28g.jpg"
+                data-description="Củ dền đỏ tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Củ dền đỏ&price=28.000 VNĐ/kg&image=../img/sp-rau-an-cu/cu-den-do-28g.jpg&description=Củ dền đỏ tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/cu-den-do-28g.jpg"
+                      class="card-img-top"
+                      alt="Củ dền đỏ"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Củ dền đỏ</h5>
+                  <p class="hl fw-bold">28.000 VNĐ/kg (-12%)</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="row mt-3">
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Khoai lang mật Đà Lạt"
+                data-price="28.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-cu/khoai-lang-giong-nhat-da-lat-loai-28.jpg"
+                data-description="Khoai lang mật Đà Lạt tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Khoai lang mật Đà Lạt&price=28.000 VNĐ/kg&image=../img/sp-rau-an-cu/khoai-lang-giong-nhat-da-lat-loai-28.jpg&description=Khoai lang mật Đà Lạt tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/khoai-lang-giong-nhat-da-lat-loai-28.jpg"
+                      class="card-img-top"
+                      alt="Khoai lang mật Đà Lạt"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Khoai lang mật Đà Lạt</h5>
+                  <p class="hl fw-bold">28.000 VNĐ/KG (-7%)</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Khoai lang tím"
+                data-price="24.000 VNĐ"
+                data-image="../img/sp-rau-an-cu/khoai-langtim-loai-21.jpg"
+                data-description="Khoai lang tím tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Khoai lang tím&price=24.000 VNĐ&image=../img/sp-rau-an-cu/khoai-langtim-loai-21.jpg&description=Khoai lang tím tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/khoai-langtim-loai-21.jpg"
+                      class="card-img-top"
+                      alt="Khoai lang tím"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Khoai lang tím</h5>
+                  <p class="hl fw-bold">24.000 VNĐ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Khoai tây beefsteak"
+                data-price="Liên hệ"
+                data-image="../img/sp-rau-an-cu/khoai-tay-beefsteak-lien-he.jpg"
+                data-description="Khoai tây beefsteak, giá liên hệ"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Khoai tây beefsteak&price=Liên hệ&image=../img/sp-rau-an-cu/khoai-tay-beefsteak-lien-he.jpg&description=Khoai tây beefsteak, giá liên hệ"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/khoai-tay-beefsteak-lien-he.jpg"
+                      class="card-img-top"
+                      alt="Khoai tây beefsteak"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Khoai tây beefsteak</h5>
+                  <p class="hl fw-bold">Liên hệ</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div
+                class="card"
+                data-title="Khoai tây vàng"
+                data-price="24.000 VNĐ/kg"
+                data-image="../img/sp-rau-an-cu/khoai-tay-vang-24.jpg"
+                data-description="Khoai tây vàng tươi, 1kg"
+              >
+                <a
+                  href="chi-tiet-san-pham.html?title=Khoai tây vàng&price=24.000 VNĐ/kg&image=../img/sp-rau-an-cu/khoai-tay-vang-24.jpg&description=Khoai tây vàng tươi, 1kg"
+                >
+                  <div class="card-img-container">
+                    <img
+                      src="../img/sp-rau-an-cu/khoai-tay-vang-24.jpg"
+                      class="card-img-top"
+                      alt="Khoai tây vàng"
+                    />
+                  </div>
+                </a>
+                <div class="card-body">
+                  <h5 class="title">Khoai tây vàng</h5>
+                  <p class="hl fw-bold">24.000 VNĐ/kg</p>
+                  <span class="time-giao">Giao trong 2 giờ</span>
+                  <div class="d-flex justify-content-between">
+                    <a href="#" class="custom-button add-to-cart"
+                      >Thêm vào giỏ</a
+                    >
+                    <a href="#" class="buy-now-button">Mua Ngay</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center d-flex justify-content-center">
+            <div class="pagination">
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <span class="dots">...</span>
+              <a href="#">8</a>
+              <a href="#" class="arrow">&gt;</a>
+              <a href="#" class="arrow">&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-5 mt-4 pb-3">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-4">
+            <img src="../img/section-5-1.webp" alt="" width="410px" />
+          </div>
+          <div class="col-4">
+            <img src="../img/section-5-2.webp" alt="" width="410px" />
+          </div>
+          <div class="col-4">
+            <img src="../img/section-5-3.webp" alt="" width="410px" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+      <a href="tel:+123456789" class="call-button"><i>📞</i> Gọi ngay</a>
+      <a href="#" class="chat-button"><i>💬</i> Chat với chúng tôi</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-top">
+            <div class="inner-content">
+              đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+            </div>
+            <form
+              class="inner-form"
+              action="#!"
+              method="post"
+              autocomplete="on"
+              target="_blank"
+            >
+              <label for="Email"></label>
+              <input
+                type="email"
+                id="Email"
+                placeholder="Nhập email của bạn..."
+              />
+              <button>Đăng ký ngay</button>
+            </form>
+          </div>
+          <div class="inner-middle">
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >trang chủ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="gioi-thieu.html"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >danh mục</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:03458458800"
+                    target="_blank"
+                    class="fw-bold fs-5"
+                    style="color: white"
+                    >liên hệ</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <nav class="inner-socials">
+              <ul>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-facebook fs-2 text-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-twitter fs-2 text-primary"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-instagram fs-2 text-warning"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="" target="_blank">
+                    <i class="fa-brands fa-youtube fs-2 text-danger"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="inner-bottom">
+            <a
+              href="email:huynhtanphong2005bt@gmail.com"
+              class="inner-copyright"
+            >
+              @2025HuynhTanPhong.PetForBest
+            </a>
+            <div class="inner-logo">
+              <a href="index.html">
+                <img src="../img/logo.png" alt="" />
+              </a>
+            </div>
+            <nav class="inner-link">
+              <ul>
+                <li>
+                  <a href="#!" style="color: white">Điều khoảng dịch vụ</a>
+                </li>
+                <li>
+                  <a href="#!" style="color: white">Chính sách bảo mật</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/san-pham.js"></script>
+   
+  </body>
+</html>
