@@ -23,7 +23,6 @@
 
     selectAllCheckbox.disabled = false;
     cart.forEach((item, index) => {
-      // Đảm bảo đường dẫn ảnh bắt đầu bằng ../img/ nếu chưa có
       const imagePath = item.image.startsWith("../img/")
         ? item.image
         : `../img/${item.image}`;
@@ -67,7 +66,6 @@
       });
     });
 
-    // Thêm sự kiện cho nút tăng/giảm số lượng
     document.querySelectorAll(".increase").forEach((button) => {
       button.addEventListener("click", () => {
         const index = parseInt(button.getAttribute("data-index"));
@@ -88,7 +86,6 @@
       });
     });
 
-    // Thêm sự kiện cho nút xóa
     document.querySelectorAll(".remove-button").forEach((button) => {
       button.addEventListener("click", () => {
         const index = parseInt(button.getAttribute("data-index"));
@@ -98,7 +95,6 @@
       });
     });
 
-    // Thêm sự kiện cho checkbox "Chọn tất cả"
     selectAllCheckbox.addEventListener("change", () => {
       cart.forEach((item) => (item.selected = selectAllCheckbox.checked));
       localStorage.setItem("cart", JSON.stringify(cart));
@@ -106,9 +102,7 @@
     });
   }
 
-  // Khởi tạo trang
   document.addEventListener("DOMContentLoaded", () => {
-    // Đảm bảo mỗi sản phẩm trong giỏ có thuộc tính selected
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     cart = cart.map((item) => ({
       ...item,
@@ -117,7 +111,6 @@
     localStorage.setItem("cart", JSON.stringify(cart));
     displayCart();
 
-    // Xử lý nút "Thanh toán"
     const checkoutButton = document.getElementById("checkout-button");
     checkoutButton.addEventListener("click", (event) => {
       event.preventDefault();
@@ -130,7 +123,6 @@
         return;
       }
 
-      // Lưu danh sách sản phẩm đã chọn vào localStorage để sử dụng ở thanh-toan.html
       localStorage.setItem("checkoutItems", JSON.stringify(selectedItems));
 
       const isLoggedIn = localStorage.getItem("isLoggedIn");
@@ -212,13 +204,11 @@
     }
   })();
 
-   // Hàm tính giá trị số từ chuỗi giá
  function parsePrice(price) {
   if (price === "Liên hệ") return 0;
   return parseFloat(price.replace(/[^0-9.]/g, "")) || 0;
 }
 
-// Hàm hiển thị danh sách sản phẩm trong giỏ hàng
 function displayCart() {
   const cartList = document.getElementById("cart-list");
   const totalPriceElement = document.getElementById("total-price");
@@ -237,7 +227,6 @@ function displayCart() {
 
   selectAllCheckbox.disabled = false;
   cart.forEach((item, index) => {
-    // Đảm bảo đường dẫn ảnh bắt đầu bằng ../img/ nếu chưa có
     const imagePath = item.image.startsWith("../img/")
       ? item.image
       : `../img/${item.image}`;
@@ -271,7 +260,6 @@ function displayCart() {
   totalPriceElement.textContent = total.toLocaleString("vi-VN") + " VNĐ";
   selectAllCheckbox.checked = cart.every((item) => item.selected);
 
-  // Thêm sự kiện cho checkbox từng sản phẩm
   document.querySelectorAll(".select-item").forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
       const index = parseInt(checkbox.getAttribute("data-index"));
@@ -281,7 +269,6 @@ function displayCart() {
     });
   });
 
-  // Thêm sự kiện cho nút tăng/giảm số lượng
   document.querySelectorAll(".increase").forEach((button) => {
     button.addEventListener("click", () => {
       const index = parseInt(button.getAttribute("data-index"));
@@ -302,7 +289,6 @@ function displayCart() {
     });
   });
 
-  // Thêm sự kiện cho nút xóa
   document.querySelectorAll(".remove-button").forEach((button) => {
     button.addEventListener("click", () => {
       const index = parseInt(button.getAttribute("data-index"));
@@ -312,7 +298,6 @@ function displayCart() {
     });
   });
 
-  // Thêm sự kiện cho checkbox "Chọn tất cả"
   selectAllCheckbox.addEventListener("change", () => {
     cart.forEach((item) => (item.selected = selectAllCheckbox.checked));
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -320,9 +305,7 @@ function displayCart() {
   });
 }
 
-// Khởi tạo trang
 document.addEventListener("DOMContentLoaded", () => {
-  // Đảm bảo mỗi sản phẩm trong giỏ có thuộc tính selected
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart = cart.map((item) => ({
     ...item,
@@ -331,7 +314,6 @@ document.addEventListener("DOMContentLoaded", () => {
   localStorage.setItem("cart", JSON.stringify(cart));
   displayCart();
 
-  // Xử lý nút "Thanh toán"
   const checkoutButton = document.getElementById("checkout-button");
   checkoutButton.addEventListener("click", (event) => {
     event.preventDefault();
@@ -344,7 +326,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Lưu danh sách sản phẩm đã chọn vào localStorage để sử dụng ở thanh-toan.html
     localStorage.setItem("checkoutItems", JSON.stringify(selectedItems));
 
     const isLoggedIn = localStorage.getItem("isLoggedIn");

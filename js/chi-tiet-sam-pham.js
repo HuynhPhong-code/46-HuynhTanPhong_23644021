@@ -1,23 +1,19 @@
-  // Lấy thông tin sản phẩm từ URL
+
   const urlParams = new URLSearchParams(window.location.search);
   const title = urlParams.get('title');
   const price = urlParams.get('price');
   const image = urlParams.get('image');
   const description = urlParams.get('description');
 
-  // Cập nhật thông tin sản phẩm trên trang
   document.querySelector('.product-detail .col-md-6 h2').textContent = title || 'Tên sản phẩm';
   document.querySelector('.product-detail .text-success.fs-4').textContent = `Giá: ${price || 'Chưa có giá'}`;
   document.querySelector('.product-detail .col-md-6 .img-fluid').src = image || '../img/default-product.jpg';
   document.querySelector('.product-detail .col-md-6 .mt-4 p').textContent = description || 'Chưa có mô tả';
 
-  // Cập nhật các hình ảnh phụ (thumbnail) với đường dẫn động
   const thumbnails = document.querySelectorAll('.product-detail .mt-3 img');
   thumbnails.forEach(thumbnail => {
       thumbnail.src = image || '../img/default-product.jpg';
   });
-
-  // Xử lý nhấp vào thumbnail
   const mainImage = document.getElementById('main-image');
   document.querySelectorAll('.product-detail .mt-3 img').forEach(thumbnail => {
       thumbnail.addEventListener('click', () => {
@@ -25,7 +21,6 @@
       });
   });
 
-  // Xử lý thêm vào giỏ hàng
   document.getElementById('add-to-cart').addEventListener('click', () => {
       const quantity = parseInt(document.getElementById('quantity').value) || 1;
       const cartItem = {
@@ -36,10 +31,8 @@
           quantity: quantity
       };
 
-      // Lấy giỏ hàng từ localStorage
       let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-      // Kiểm tra sản phẩm đã có trong giỏ chưa
       const existingItem = cart.find(item => item.title === cartItem.title);
       if (existingItem) {
           existingItem.quantity += quantity;
@@ -47,7 +40,6 @@
           cart.push(cartItem);
       }
 
-      // Lưu giỏ hàng vào localStorage
       localStorage.setItem('cart', JSON.stringify(cart));
       alert('Sản phẩm đã được thêm vào giỏ hàng!');
   });
