@@ -20,11 +20,6 @@ function checkLogin(callback) {
   callback();
 }
 
-// Xóa trạng thái đăng nhập khi đóng hoặc tải lại trang
-window.addEventListener("beforeunload", () => {
-  localStorage.removeItem("isLoggedIn");
-  localStorage.removeItem("currentUser");
-});
 
 // Hover effect cho các nút call-button và chat-button
 document.querySelectorAll(".call-button, .chat-button").forEach((button) => {

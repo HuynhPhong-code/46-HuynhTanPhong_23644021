@@ -131,3 +131,37 @@ document
       showError("login-password", "Email hoặc mật khẩu không đúng.");
     }
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("login-form");
+    const loginButtonContainer = document.querySelector("a[href='login-register.html']");
+    
+    // Hiển thị nút Đăng xuất nếu đã đăng nhập
+    function showLogoutButton() {
+      if (localStorage.getItem("isLoggedIn") === "true") {
+        const logoutBtn = document.createElement("button");
+        logoutBtn.textContent = "Đăng xuất";
+        logoutBtn.classList.add("button", "btn-outline-danger", "rounded-pill", "px-3", "py-1", "ms-2");
+        logoutBtn.addEventListener("click", function () {
+          localStorage.removeItem("isLoggedIn");
+          window.location.reload(); // Tải lại trang
+        });
+        loginButtonContainer.replaceWith(logoutBtn);
+      }
+    }
+
+    // Giả lập đăng nhập thành công
+    if (loginForm) {
+      loginForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        // Ở đây bạn nên xử lý xác thực thực tế, ví dụ gọi API
+        localStorage.setItem("isLoggedIn", "true");
+        alert("Đăng nhập thành công!");
+        window.location.reload();
+      });
+    }
+
+    showLogoutButton();
+  });
+

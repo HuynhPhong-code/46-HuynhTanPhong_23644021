@@ -139,14 +139,14 @@
               placeholder="Tìm kiếm sản phẩm..."
             />
           </form>
-          <a href="login-register.html">
+          <a id="auth-link" href="login-register.html">
             <button
               class="button btn-outline-success rounded-pill px-3 py-1"
-              data-bs-
             >
               <i class="fa-solid fa-user me-2"></i>Login / Sign Up
             </button>
           </a>
+          
           <a href="gio-hang.html">
             <i class="fa-solid fa-cart-plus fs-2" style="color: #006400"></i>
           </a>
@@ -249,5 +249,25 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/hoa-don.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const authLink = document.getElementById("auth-link");
+    
+        if (localStorage.getItem("isLoggedIn") === "true") {
+          // Tạo nút đăng xuất thay thế
+          const logoutBtn = document.createElement("button");
+          logoutBtn.textContent = "Đăng xuất";
+          logoutBtn.classList.add("button", "btn-outline-danger", "rounded-pill", "px-3", "py-1");
+          logoutBtn.addEventListener("click", function () {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "index.html";
+          });
+    
+          // Thay thế thẻ <a> chứa nút đăng nhập bằng nút đăng xuất
+          authLink.replaceWith(logoutBtn);
+        }
+      });
+    </script>
+    
 </body>
 </html>

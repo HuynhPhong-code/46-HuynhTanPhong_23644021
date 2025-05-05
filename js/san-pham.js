@@ -41,7 +41,13 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
-        cart.push({ title, price, image, description, quantity: 1 });
+        cart.push({
+          title,
+          price,
+          image,
+          description,
+          quantity: 1
+        });
       }
       localStorage.setItem("cart", JSON.stringify(cart));
       alert("Sản phẩm đã được thêm vào giỏ hàng!");
@@ -73,4 +79,22 @@ document.querySelectorAll(".buy-now-button").forEach((button) => {
       window.location.href = checkoutUrl;
     });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const authLink = document.getElementById("auth-link");
+
+  if (localStorage.getItem("isLoggedIn") === "true") {
+    // Tạo nút đăng xuất thay thế
+    const logoutBtn = document.createElement("button");
+    logoutBtn.textContent = "Đăng xuất";
+    logoutBtn.classList.add("button", "btn-outline-danger", "rounded-pill", "px-3", "py-1");
+    logoutBtn.addEventListener("click", function () {
+      localStorage.removeItem("isLoggedIn");
+      window.location.href = "index.html";
+    });
+
+    // Thay thế thẻ <a> chứa nút đăng nhập bằng nút đăng xuất
+    authLink.replaceWith(logoutBtn);
+  }
 });
