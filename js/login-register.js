@@ -42,47 +42,60 @@ document
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirm-password").value;
 
-    let isValid = true;
+    let hasErrors = false;
 
+    // Validation for Last Name (Họ)
+    const nameRegex = /^[A-Za-zÀ-Ỹà-ỹ][A-Za-zÀ-Ỹà-ỹ\s]*$/;
     if (!lastName) {
       showError("last-name", "Họ không được để trống.");
-      isValid = false;
+      hasErrors = true;
+    } else if (!nameRegex.test(lastName)) {
+      showError("last-name", "Họ không được bắt đầu bằng số hoặc chứa ký tự đặc biệt.");
+      hasErrors = true;
     }
 
+    // Validation for First Name (Tên)
     if (!firstName) {
       showError("first-name", "Tên không được để trống.");
-      isValid = false;
+      hasErrors = true;
+    } else if (!nameRegex.test(firstName)) {
+      showError("first-name", "Tên không được bắt đầu bằng số hoặc chứa ký tự đặc biệt.");
+      hasErrors = true;
     }
 
+    // Validation for Phone Number (Số điện thoại)
     const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(phone)) {
+    if (!phone || !phoneRegex.test(phone)) {
       showError("phone", "Số điện thoại phải là 10 chữ số.");
-      isValid = false;
+      hasErrors = true;
     }
 
+    // Validation for Email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
+    if (!email || !emailRegex.test(email)) {
       showError("email", "Email không hợp lệ.");
-      isValid = false;
+      hasErrors = true;
     } else {
       const users = JSON.parse(localStorage.getItem("users")) || [];
       if (users.some((user) => user.email === email)) {
         showError("email", "Email này đã được đăng ký.");
-        isValid = false;
+        hasErrors = true;
       }
     }
 
-    if (password.length < 6) {
+    // Validation for Password
+    if (!password || password.length < 6) {
       showError("password", "Mật khẩu phải có ít nhất 6 ký tự.");
-      isValid = false;
+      hasErrors = true;
     }
 
+    // Validation for Confirm Password
     if (password !== confirmPassword) {
       showError("confirm-password", "Mật khẩu xác nhận không khớp.");
-      isValid = false;
+      hasErrors = true;
     }
 
-    if (isValid) {
+    if (!hasErrors) {
       const users = JSON.parse(localStorage.getItem("users")) || [];
       users.push({
         lastName,
@@ -132,36 +145,31 @@ document
     }
   });
 
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.getElementById("login-form");
-    const loginButtonContainer = document.querySelector("a[href='login-register.html']");
-    
-    // Hiển thị nút Đăng xuất nếu đã đăng nhập
-    function showLogoutButton() {
-      if (localStorage.getItem("isLoggedIn") === "true") {
-        const logoutBtn = document.createElement("button");
-        logoutBtn.textContent = "Đăng xuất";
-        logoutBtn.classList.add("button", "btn-outline-danger", "rounded-pill", "px-3", "py-1", "ms-2");
-        logoutBtn.addEventListener("click", function () {
-          localStorage.removeItem("isLoggedIn");
-          window.location.reload(); // Tải lại trang
-        });
-        loginButtonContainer.replaceWith(logoutBtn);
-      }
-    }
-
-    // Giả lập đăng nhập thành công
-    if (loginForm) {
-      loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        // Ở đây bạn nên xử lý xác thực thực tế, ví dụ gọi API
-        localStorage.setItem("isLoggedIn", "true");
-        alert("Đăng nhập thành công!");
+document.addEventListener("DOMContentLoaded", function () {
+  const loginForm = document.getElementById("login-form");
+  const loginButtonContainer = document.querySelector("a[href='login-register.html']");
+  
+  function showLogoutButton() {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+      const logoutBtn = document.createElement("button");
+      logoutBtn.textContent = "Đăng xuất";
+      logoutBtn.classList.add("button", "btn-outline-danger", "rounded-pill", "px-3", "py-1", "ms-2");
+      logoutBtn.addEventListener("click", function () {
+        localStorage.removeItem("isLoggedIn");
         window.location.reload();
       });
+      loginButtonContainer.replaceWith(logoutBtn);
     }
+  }
 
-    showLogoutButton();
-  });
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      localStorage.setItem("isLoggedIn", "true");
+      alert("Đăng nhập thành công!");
+      window.location.reload();
+    });
+  }
 
+  showLogoutButton();
+});

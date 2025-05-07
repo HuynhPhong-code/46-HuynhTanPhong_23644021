@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/login-register.css" />
     <title>Login / Register</title>
     <style>
-      /* CSS cho popup */
       .popup-overlay {
         display: none;
         position: fixed;
@@ -40,10 +39,23 @@
       .popup-content p {
         margin-bottom: 20px;
       }
+      .error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+        display: none;
+      }
+      /* Disable HTML5 validation styling */
+      input:invalid {
+        border-color: inherit;
+        box-shadow: none;
+      }
+      input:invalid + .error-message {
+        display: none;
+      }
     </style>
   </head>
   <body>
-    <!-- infor -->
     <div class="infor">
       <div class="inner-wrap p-1">
         <div class="container">
@@ -67,9 +79,7 @@
         </div>
       </div>
     </div>
-    <!--End infor -->
 
-    <!-- header -->
     <header class="header pt-1 pb-1">
       <div class="container d-flex justify-content-between align-items-center">
         <a href="index.html">
@@ -80,33 +90,19 @@
             class="header-menu d-flex gap-4 fs-5 pt-2 ms-3 me-5"
             style="z-index: 99"
           >
-            <li>
-              <a href="index.html">Trang chủ</a>
-            </li>
+            <li><a href="index.html">Trang chủ</a></li>
             <li>
               <a href="san-pham.html">Sản phẩm</a>
               <ul>
                 <li>
                   <a href="san-pham.html"> Rau ăn lá </a>
                   <ul>
-                    <li>
-                      <a href="#!">Rau muống</a>
-                    </li>
-                    <li>
-                      <a href="#!">Cải ngọt</a>
-                    </li>
-                    <li>
-                      <a href="#!">Cải xanh</a>
-                    </li>
-                    <li>
-                      <a href="#!">Xà lách</a>
-                    </li>
-                    <li>
-                      <a href="#!">Rau dền</a>
-                    </li>
-                    <li>
-                      <a href="#!">Mồng tơi</a>
-                    </li>
+                    <li><a href="#!">Rau muống</a></li>
+                    <li><a href="#!">Cải ngọt</a></li>
+                    <li><a href="#!">Cải xanh</a></li>
+                    <li><a href="#!">Xà lách</a></li>
+                    <li><a href="#!">Rau dền</a></li>
+                    <li><a href="#!">Mồng tơi</a></li>
                   </ul>
                 </li>
                 <li>
@@ -165,9 +161,7 @@
                 <li><a href="gioi-thieu.html">Blog</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#!">Liên hệ</a>
-            </li>
+            <li><a href="#!">Liên hệ</a></li>
           </ul>
         </nav>
         <form action="#!" class="d-flex align-items-center search-box">
@@ -181,12 +175,10 @@
         <a href="login-register.html">
           <button
             class="button btn-outline-success rounded-pill px-3 py-1"
-            data-bs-
           >
             <i class="fa-solid fa-user me-2"></i>Login / Sign Up
           </button>
         </a>
-        <!-- Thêm sau nút Login / Sign Up -->
         <button
           id="logout-btn"
           class="button btn-outline-danger rounded-pill px-3 py-1"
@@ -194,13 +186,11 @@
         >
           <i class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất
         </button>
-
         <a href="gio-hang.html">
           <i class="fa-solid fa-cart-plus fs-2" style="color: #006400"></i>
         </a>
       </div>
     </header>
-    <!-- End header -->
 
     <div class="title">
       <div class="container fs-5">
@@ -212,7 +202,6 @@
       </div>
     </div>
 
-    <!-- form đăng ký -->
     <div class="register-container">
       <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
       <form id="register-form" autocomplete="on">
@@ -236,15 +225,12 @@
         />
         <div class="error-message" id="first-name-error"></div>
 
-        <label for="phone"
-          >Số điện thoại <span style="color: red">*</span></label
-        >
+        <label for="phone">Số điện thoại <span style="color: red">*</span></label>
         <input
           type="tel"
           name="phone"
           id="phone"
           placeholder="Số điện thoại"
-          pattern="[0-9]{10}"
           required
         />
         <div class="error-message" id="phone-error"></div>
@@ -270,9 +256,7 @@
         />
         <div class="error-message" id="password-error"></div>
 
-        <label for="confirm-password"
-          >Xác nhận mật khẩu <span style="color: red">*</span></label
-        >
+        <label for="confirm-password">Xác nhận mật khẩu <span style="color: red">*</span></label>
         <input
           type="password"
           name="confirm-password"
@@ -294,7 +278,6 @@
       </div>
     </div>
 
-    <!-- form đăng nhập -->
     <div class="login-container" style="display: none">
       <h2>ĐĂNG NHẬP</h2>
       <form id="login-form">
@@ -324,7 +307,6 @@
       </form>
     </div>
 
-    <!-- Popup thông báo đăng nhập thành công -->
     <div class="popup-overlay" id="success-popup">
       <div class="popup-content">
         <h3>Đăng nhập thành công!</h3>
@@ -332,7 +314,6 @@
       </div>
     </div>
 
-    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="inner-wrap">
