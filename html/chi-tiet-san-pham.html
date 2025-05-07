@@ -202,7 +202,7 @@
               Giá: 45.000đ
             </p>
             <p>Trạng thái: <span class="text-success">Còn hàng</span></p>
-            <!-- <p>Danh mục: <a href="san-pham-an-la.html" class="text-decoration-none">Rau ăn lá</a></p> -->
+            <p>Danh mục: <a href="san-pham-an-la.html" class="text-decoration-none">Rau ăn lá</a></p>
 
             <div class="my-3">
               <label for="quantity" class="form-label fw-bold">Số lượng:</label>
@@ -232,6 +232,15 @@
                 hợp cho mọi gia đình.
               </p>
             </div>
+
+            <!-- Thông tin dinh dưỡng -->
+            <div class="mt-4">
+              <h5 class="fw-bold">Thông tin dinh dưỡng</h5>
+              <p>- Calo: 25 kcal/100g</p>
+              <p>- Chất xơ: 2.5g/100g</p>
+              <p>- Vitamin C: 30mg/100g</p>
+              <p>- Sắt: 1.5mg/100g</p>
+            </div>
           </div>
         </div>
 
@@ -243,6 +252,63 @@
             <p>- Quy cách đóng gói: 500g/gói</p>
             <p>- Bảo quản: Ở nhiệt độ từ 0-5°C</p>
             <p>- Thời gian sử dụng: 5 ngày kể từ ngày sản xuất</p>
+            <p>- Chứng nhận: VietGAP, Hữu cơ</p>
+            <p>- Phương pháp trồng: Thủy canh, không sử dụng thuốc trừ sâu hóa học</p>
+          </div>
+        </div>
+
+        <!-- Gợi ý sử dụng -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="fw-bold">Gợi ý sử dụng</h4>
+            <p>- Có thể dùng để chế biến các món salad tươi, xào, nấu canh hoặc làm nước ép.</p>
+            <p>- Kết hợp tốt với các loại rau củ khác như cà rốt, dưa leo để tăng hương vị.</p>
+            <p>- Rửa sạch trước khi sử dụng, ngâm qua nước muối loãng để đảm bảo vệ sinh.</p>
+          </div>
+        </div>
+
+        <!-- Đánh giá sản phẩm -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h4 class="fw-bold">Đánh giá sản phẩm</h4>
+            <div class="d-flex align-items-center mb-3">
+              <span class="text-warning fs-5">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <span class="ms-2">(4.5/5 từ 120 đánh giá)</span>
+            </div>
+            <div class="comment-section">
+              <div class="comment mb-3">
+                <p><strong>Nguyễn Văn A</strong> - 01/05/2025</p>
+                <p>Rau rất tươi, đóng gói cẩn thận. Sẽ tiếp tục ủng hộ!</p>
+              </div>
+              <div class="comment mb-3">
+                <p><strong>Trần Thị B</strong> - 28/04/2025</p>
+                <p>Hương vị ngon, nhưng giao hàng hơi chậm.</p>
+              </div>
+            </div>
+            <form class="mt-4">
+              <h5 class="fw-bold">Viết đánh giá của bạn</h5>
+              <div class="mb-3">
+                <label for="rating" class="form-label">Chọn số sao:</label>
+                <select id="rating" class="form-select w-25">
+                  <option value="5">5 sao</option>
+                  <option value="4">4 sao</option>
+                  <option value="3">3 sao</option>
+                  <option value="2">2 sao</option>
+                  <option value="1">1 sao</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="comment" class="form-label">Nhận xét:</label>
+                <textarea id="comment" class="form-control" rows="4" placeholder="Nhập nhận xét của bạn..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+            </form>
           </div>
         </div>
       </div>
@@ -376,5 +442,6 @@
 
     <script src="../js/chi-tiet-sam-pham.js"></script>
     
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93c0b460acd4676f',t:'MTc0NjYyMDc3NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
   </body>
 </html>
